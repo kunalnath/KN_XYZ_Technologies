@@ -38,6 +38,7 @@ pipeline {
             }
             steps {
                 sh 'docker build -t kunalz/$JOB_NAME:$BUILD_NUMBER .'
+                echo 'Hello'
             }
         }
     }
